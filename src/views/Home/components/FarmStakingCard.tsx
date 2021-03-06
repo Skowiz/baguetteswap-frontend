@@ -54,12 +54,12 @@ const FarmedStakingCard = () => {
   }, [onReward])
 
   return (
-    <StyledFarmStakingCard>
+    <StyledLotteryCard>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(542, 'Farms & Staking')}
+          {TranslateString(550, 'Invest')}
         </Heading>
-        <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/ticket.svg" alt="cake logo" width={64} height={64} />
         <Block>
           <Label>{TranslateString(544, 'LMN to Harvest')}:</Label>
           <CakeHarvestBalance />
@@ -85,7 +85,7 @@ const FarmedStakingCard = () => {
           )}
         </Actions>
       </CardBody>
-    </StyledFarmStakingCard>
+    </StyledLotteryCard>
   )
 }
 
