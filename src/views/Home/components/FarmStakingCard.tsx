@@ -54,18 +54,18 @@ const FarmedStakingCard = () => {
   }, [onReward])
 
   return (
-    <StyledLotteryCard>
+    <StyledFarmStakingCard>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(550, 'Invest')}
+          {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <CardImage src="/images/ticket.svg" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
         <Block>
-          <Label>{TranslateString(544, 'LMN to Harvest')}:</Label>
+          <Label>{TranslateString(544, 'CAKE to Harvest')}:</Label>
           <CakeHarvestBalance />
         </Block>
         <Block>
-          <Label>{TranslateString(546, 'LMN in Wallet')}:</Label>
+          <Label>{TranslateString(546, 'CAKE in Wallet')}:</Label>
           <CakeWalletBalance />
         </Block>
         <Actions>
@@ -77,7 +77,7 @@ const FarmedStakingCard = () => {
               width="100%"
             >
               {pendingTx
-                ? TranslateString(548, 'Collecting LMN')
+                ? TranslateString(548, 'Collecting CAKE')
                 : TranslateString(532, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (
@@ -85,7 +85,7 @@ const FarmedStakingCard = () => {
           )}
         </Actions>
       </CardBody>
-    </StyledLotteryCard>
+    </StyledFarmStakingCard>
   )
 }
 
